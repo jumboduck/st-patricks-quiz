@@ -17,18 +17,25 @@ def home():
     return render_template("index.html")
 
 
-# Function to load 'Gallery' page
+# Function to load 'leaderboard' page
 
 @app.route('/leaderboard')
 def leaderboard():
     return render_template("leaderboard.html")
 
 
-# Function to load 'Showreels' page
+# Function to load 'quiz' page
 
 @app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
+
+
+# Function to load 'login' page
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
 
 
 # IP and PORT
