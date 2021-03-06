@@ -46,6 +46,18 @@ def quiz():
         return render_template("quiz.html", name=name)
 
 
+@app.route("/add_score", methods=["GET", "POST"])
+def add_score():
+    if request.method == "POST":
+        team = {
+            "score": request.form.get("score"),
+            "created_by": session["user"]
+        }
+        mongo.db.teams.insert_one(team)
+        flash("Task Successfully Added")
+        return redirect(url_for("leaderboard"))
+
+
 # Function to load 'login' page
 
 @app.route("/login", methods=["GET", "POST"])
