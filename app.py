@@ -4,7 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
-from werkzeug.security import generate_password_hash, check_password_hash
+
 if os.path.exists("env.py"):
     import env
 
@@ -30,7 +30,8 @@ def home():
 
 @app.route('/leaderboard')
 def leaderboard():
-    return render_template("leaderboard.html")
+    teams = list(mongo.db.teams.find())
+    return render_template("leaderboard.html", teams=teams)
 
 
 # Function to load 'quiz' page

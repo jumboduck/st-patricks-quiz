@@ -1,11 +1,34 @@
 {% extends 'base.html' %} {% block content %}
+
 <div class="leaderboard">
-    <form class="scoreboard">
-        <input type="text" id="teamA" name="teamA" class="input-group" value="TEAM A-Score">
-        <input type="text" id="teamB" name="teamB" class="input-group" value="TEAM B-Score">
-        <input type="text" id="teamC" name="teamC" class="input-group" value="TEAM C-Score">
-        <input type="text" id="teamD" name="teamD" class="input-group" value="TEAM D-Score">
-        <input type="text" id="teamE" name="teamE" class="input-group" value="TEAM E-Score">
-    </form>
+
+    <!--Collapse-->
+    <!--Loop index from the jinja for loop used for collapse function to work individually-->
+    {% if teams|length > 0 %}
+    <div class="accordion pt-5" id="accordionExample">
+        {% for team in teams %}
+        <div class="card mb-2">
+            <div class="card-header" id="headingOne">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <button class="btn btn-block text-left text-muted pl-0 form-header" type="button"
+                            data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            <i class="fas fa-chevron-down"></i>&nbsp;&nbsp;&nbsp;{{team.created_by}} - {{team.score}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    {% else %}
+    <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+    {% endif %}
 </div>
+
+
+
+
 {% endblock %}

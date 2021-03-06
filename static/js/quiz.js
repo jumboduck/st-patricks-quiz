@@ -127,7 +127,7 @@ var quiz = {
     setTimeout(function(){
       if (quiz.now < quiz.data.length) { quiz.draw(); } 
       else {
-        quiz.hQn.innerHTML = `You have answered ${quiz.score} of ${quiz.data.length} correctly.`;
+        quiz.hQn.innerHTML = `You total score is ${quiz.score}`;
         quiz.hAns.innerHTML = "";
       }
     }, 1000);
