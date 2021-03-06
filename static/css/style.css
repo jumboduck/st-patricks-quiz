@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
+/* Common css */
+h1 {
+    background-color: #29da4f;
+    margin-bottom: 0;
+    font-family: "Aclonica", sans-serif;
+    padding: 10px 10px 0;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.custom-nav {
+    background-color: #29da4f;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.custom-footer {
+    background-color: #29da4f;
+    font-family: "Aclonica", sans-serif;
+}
+
+p {
+    font-family: "Aclonica", sans-serif;
+}
+
