@@ -36,6 +36,24 @@ p {
     font-family: "Aclonica", sans-serif;
 }
 
+/* Login-page */
+
+.login-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/static/css/images/login-page.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Quiz-page */
+
+.quiz-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/static/css/images/clover.jpg);
+    position: absolute;
+}
+
 /* leaderboard-page */
 
 .leaderboard {
