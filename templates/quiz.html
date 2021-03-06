@@ -1,65 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 
-    <section class="quiz-img p-2">
-        <div class="q1 p-2">
-            <p>In which country is St. Patrick the patron saint?</p>
-            <input type="radio" id="country" name="country" value="scotland">
-            <label for="country">Scotland</label><br>
-            <input type="radio" id="germany" name="country" value="germany">
-            <label for="germany">Germany</label><br>
-            <input type="radio" id="ireland" name="country" value="ireland">
-            <label for="ireland">Ireland</label><br>
-            <input type="radio" id="iceland" name="country" value="iceland">
-            <label for="iceland">Iceland</label><br>
-        </div>
 
-        <div class="q2 p-2">
-            <p>What animal did St. Patrick drive out of Ireland?</p>
-            <input type="radio" id="snake" name="animal" value="snake">
-            <label for="snake">Snake</label><br>
-            <input type="radio" id="scorpion" name="animal" value="scorpion">
-            <label for="scorpion">Scorpion</label><br>
-            <input type="radio" id="spider" name="animal" value="spider">
-            <label for="spider">Spider</label><br>
-            <input type="radio" id="rat" name="animal" value="rat">
-            <label for="rat">Rat</label><br>
-        </div>
+<section>
+    <div class="row mt-5 mb-5">
+        <div class="col" id="quizWrap"></div>
+    </div>
 
-        <div class="q3 p-2">
-            <p>What happens if you don't wear Green on St. Patrick's Day ?</p>
-            <input type="radio" id="pinched" name="wear_green" value="pinched">
-            <label for="pinched">Get pinched</label><br>
-            <input type="radio" id="kissed" name="wear_green" value="kissed">
-            <label for="kissed">Get Kissed</label><br>
-            <input type="radio" id="bad-luck" name="wear_green" value="bad-luck">
-            <label for="bad-luck">Bad luck for one year</label><br>
-            <input type="radio" id="punched" name="wear_green" value="punched">
-            <label for="punched">Get punched</label><br>
-        </div>
 
-        <div class="q4 p-2">
-            <p>How many leaves does a shamrock have?</p>
-            <input type="radio" id="one_leaf" name="no-leaves" value="one_leaf">
-            <label for="one_leaf">One</label><br>
-            <input type="radio" id="two_leaves" name="no-leaves" value="two_leaves">
-            <label for="two_leaves">Two</label><br>
-            <input type="radio" id="three_leaves" name="no-leaves" value="three_leaves">
-            <label for="three_leaves">Three</label><br>
-            <input type="radio" id="four_leaves" name="no-leaves" value="four_leaves">
-            <label for="four_leaves">Four</label><br>
-        </div>
-
-        <div class="q5 p-2">
-            <p>What colour was originally associated with St. Patrick's day?</p>
-            <input type="radio" id="yellow" name="first-color" value="yellow">
-            <label for="yellow">Yellow</label><br>
-            <input type="radio" id="green" name="first-color" value="green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="purple" name="first-color" value="purple">
-            <label for="purple">Purple</label><br>
-            <input type="radio" id="blue" name="first-color" value="blue">
-            <label for="blue">Blue</label><br>
-        </div>
-    </section>
+</section>
 
 {% endblock %}
