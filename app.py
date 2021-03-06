@@ -19,6 +19,7 @@ mongo = PyMongo(app)
 
 # Function to load 'Home' page as default
 
+
 @app.route('/')
 @app.route('/home')
 def home():
