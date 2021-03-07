@@ -30,7 +30,30 @@ p {
     font-family: "Aclonica", sans-serif;
 }
 
+.btn-leaderboard{
+     background-color:#29da4f;
+}
+
+/*---hover overlay for SEND icon button---*/
+ .hover-overlay-text:hover{
+     transform: scale(1.1) !important;
+}
+
+/*-----SERVICES.html - Blinking Arrow feature-----*/
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(41,218,79, 1); }
+    49%{    color: rgb(41,218,79, 1); }
+    60%{    color: transparent; }
+    99%{    color: transparent; }
+    100%{   color: rgb(41,218,79, 1); }
+}
+
 /*---Block---*/
+
 .block {
      height: 40px;
 }
@@ -185,8 +208,8 @@ p {
 /* (B) QUESTION */
 #quizQn {
     padding: 20px;
-    background: #60a03f;
-    color: #fff;
+    background: #29da4f;
+    color: #000000;
     font-size: 19px;
     border-radius: 10px;
 }
