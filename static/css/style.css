@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 
-body{
-    background-color:#e8fbe8;
-    font-family: "Aclonica", sans-serif
+body {
+    background-color: #e8fbe8;
+    font-family: "Aclonica", sans-serif;
 }
 
 /* Common css */
@@ -15,9 +15,7 @@ body{
 
 .custom-nav{
     background-color: #29da4f;
-    background-color: #29da4f;
-    font-family: "Aclonica", sans-serif;
-    font-size: 20px;
+
 }
 
 .custom-footer {
@@ -41,7 +39,7 @@ p {
 /*Home page*/
 
 #home-page {
-    display:flex;
+    display: flex;
 }
 
 #home-text {
@@ -66,7 +64,7 @@ p {
     width: 50%;
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .home-img {
         margin-top: 50px;
     }
@@ -103,127 +101,137 @@ p {
 
 @-webkit-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 
     50% {
-        background-position: 100% 19%
+        background-position: 100% 19%;
     }
 
     100% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 }
 
 @-moz-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 
     50% {
-        background-position: 100% 19%
+        background-position: 100% 19%;
     }
 
     100% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 }
 
 @-o-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 
     50% {
-        background-position: 100% 19%
+        background-position: 100% 19%;
     }
 
     100% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 }
 
 @keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 
     50% {
-        background-position: 100% 19%
+        background-position: 100% 19%;
     }
 
     100% {
-        background-position: 0% 82%
+        background-position: 0% 82%;
     }
 }
 
-.input-group {
-    width: 80%;
-    margin: auto;
+.card {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.team-info {
+    font-family: "Aclonica", sans-serif;
+}
 
 /* (A) WRAPPER */
 #quizWrap {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* (B) QUESTION */
 #quizQn {
-  padding: 20px;
-  background: #60a03f;
-  color: #fff;
-  font-size: 24px;
-  border-radius: 10px;
+    padding: 20px;
+    background: #60a03f;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
 }
 
 /* (C) ANSWERS */
 #quizAns {
-  margin: 10px 0;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
-#quizAns input[type=radio] { display: none; }
+#quizAns input[type="radio"] {
+    display: none;
+}
 #quizAns label {
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
 }
 #quizAns label.correct {
-  background: #d8ffc4;
-  border: 1px solid #60a03f;
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
 }
 #quizAns label.wrong {
-  background: #ffe8e8;
-  border: 1px solid #c78181;
+    background: #ffe8e8;
+    border: 1px solid #c78181;
 }
-
 
 /*----Toasts-----*/
 
-.toast-container{
-    position:fixed;
-    right:1.5rem;
-    top:0.5rem;
+.toast-container {
+    position: fixed;
+    right: 1.5rem;
+    top: 0.5rem;
     z-index: 99999999999;
 }
 
-.toasts{
-    border:0.1rem solid rgb(254, 17, 71, 1);
-    background-color:rgb(255, 255, 255, 0.8) !important;
+.toasts {
+    border: 0.1rem solid rgb(254, 17, 71, 1);
+    background-color: rgb(255, 255, 255, 0.8) !important;
 }
 
-.toast-text{
-    font-family: 'Source Serif Pro', serif;
+.toast-text {
+    font-family: "Source Serif Pro", serif;
     font-size: 1.1rem;
     font-weight: 600;
     color: rgb(0, 0, 0, 1);
+}
+
+
+.toast-cross {
+    border-bottom-style: solid;
+    border-color: rgb(0, 0, 0, 0.8);
 }
 
 .toast-cross{
