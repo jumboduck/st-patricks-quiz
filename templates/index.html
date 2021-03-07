@@ -1,6 +1,12 @@
 
 {% extends 'base.html' %} {% block content %}
 
-<p>index.html</p>
+<section id="home-page">
+    <div id="home-text">
+        <h2 class="text-center">How much do you know about St. Patrick's Day?</h2>
+        <h4 class="text-center">Take our Quiz to test your knowledge   <a href="{{url_for('login')}}"><i class="fas fa-arrow-circle-right"></i></a></h4>
+    </div>
+    <img src="/static/images/leprechaun-3972451_1920.png" class="home-img" alt="leprechaun">
+</section>
 
 {% endblock %}
