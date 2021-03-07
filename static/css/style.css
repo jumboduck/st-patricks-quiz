@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
-/* Common css */
+
+/* Footer */
+.custom-footer {
+    background-color: #7cb518;
+    font-family: "Aclonica", sans-serif;
+}
+.custom-footer p {
+    font-family: "Aclonica", sans-serif;
+    padding: 20px 0 10px 0;
+}
+
+/* Header */
 .navbar {
     padding: 10px;
+    font-family: "Aclonica", sans-serif;
 }
 
 .custom-nav {
-    background-color: #29da4f;
+    background-color: #7cb518;
 }
 
 .navbar-toggler {
-    margin-left: auto;
-    
+    margin-left: auto; 
 }
 
 .navbar-nav {
@@ -19,33 +30,36 @@
     justify-content: space-evenly;
 }
 
-.custom-footer {
-    background-color: #29da4f;
-    font-family: "Aclonica", sans-serif;
+.nav-link {
+    color: blue;
+    padding-left: 100px;
 }
 
-p {
-    font-family: "Aclonica", sans-serif;
+.navbar-nav li:hover {
+    color: #1ddde8;
 }
 
-/* Header */
-#header-title {
-    background-color: #29da4f;
-    margin-bottom: 0;
-    font-family: "Aclonica", sans-serif;
-    padding: 10px 10px 0;
+.navbar-nav li {
+    padding: 0 50px;
 }
 
 /*Home page*/
+.container {
+    background-color: red;
+}
+
 #home-page {
     display:flex;
+    background-color: #aacc00;
 }
+
 #home-text {
-    margin-top: 200px;
+    padding: 20% 30px;
 }
 
 #home-text h2 {
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 #home-text i {
@@ -54,12 +68,13 @@ p {
 }
 
 #home-text i:hover {
-    color: #29da4f;
+    color: #f3722c;
     transform: scale(1.1);
 }
 
 .home-img {
     width: 40%;
+    height: 90%;
     margin-left: 100px;
 }
 
@@ -71,7 +86,7 @@ p {
         padding-bottom: 50px;
     }
     .home-img {
-        display: none;
+        margin-left: 30%;
     }
 }
 
