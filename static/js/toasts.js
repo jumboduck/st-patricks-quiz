@@ -2,4 +2,4 @@
 
 setTimeout(function(){
   $('#timer').remove();
-}, 5000);
+}, 3000);
