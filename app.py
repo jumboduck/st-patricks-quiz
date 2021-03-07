@@ -78,7 +78,7 @@ def login():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("name").lower()
-        flash("Registration Successful!")
+        flash("Team Registration Successful!")
         return redirect(url_for("quiz", name=session["user"]))
 
     return render_template("login.html")
