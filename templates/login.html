@@ -2,21 +2,19 @@
 
 <div class="row">
     <div class="login-img">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
-            <div class="card-panel">
-                <!-- username -->
-                <div class="row">
-					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix light-blue-text text-darken-4"></i>
-						<input id="name" name="name" type="text" minlength="5"
+        <form method="POST" action="{{ url_for('login') }}">
+                <!-- Team Name -->
+                <div class="row text-center mt-5">
+                    <div class="input-field">
+                        <input id="name" name="name" type="text" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-						<label for="name">Team Name</label>
-					</div>
+                        <label for="name">Team Name</label>
+                    </div>
                 </div>
-                <!-- register -->
-                <div class="row">
-                    <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
-                        Start Quiz <i class="fas fa-sign-in-alt"></i>
+                <!--  Start Quiz -->
+                <div class="row text-center mt-5">
+                    <button type="submit" class="btn btn-success">
+                        Start Quiz
                     </button>
                 </div>
             </div>
