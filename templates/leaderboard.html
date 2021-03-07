@@ -1,33 +1,23 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="leaderboard">
-
+<div class="leaderboard pt-4">
+    <h1 class="score-title">Champions<span><i class="fas fa-trophy"></i></span></h1>
     <!--Collapse-->
-    <!--Loop index from the jinja for loop used for collapse function to work individually-->
-    {% if teams|length > 0 %}
-    <div class="accordion pt-5" id="accordionExample">
-        {% for team in teams %}
-        <div class="card mb-2">
-            <div class="card-header" id="headingOne">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                        <button class="btn btn-block text-left pl-0 form-header" type="button"
-                            data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false"
-                            aria-controls="collapseOne">
-                          {{team.created_by}} - {{team.score}}
-                        </button>
-                    </div>
+    {% if teams|length > 0 %} {% for team in teams %}
+    <div class="card mb-2">
+        <div class="card-header" id="headingOne">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <button class="btn btn-block text-left pl-0 form-header team-info" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapseOne">
+                        {{team.created_by}} - {{team.score}}
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    {% endfor %}
-    {% else %}
+    {% endfor %} {% else %}
     <h3 class="text-center">No Results Found</h3>
     {% endif %}
 </div>
-
-
-
 
 {% endblock %}

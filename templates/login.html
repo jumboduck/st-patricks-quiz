@@ -3,20 +3,17 @@
 <div class="row">
     <div class="login-img">
         <form method="POST" action="{{ url_for('login') }}">
-                <!-- Team Name -->
-                <div class="row text-center mt-5">
-                    <div class="input-field">
-                        <input id="name" name="name" type="text" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                        <label for="name">Team Name</label>
-                    </div>
+            <!-- Team Name -->
+            <div class="row text-center mt-5">
+                <div class="input-field">
+                    <input id="name" name="name" type="text" placeholder="Team" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9\s]{4,15}$" class="validate" required />
                 </div>
-                <!--  Start Quiz -->
-                <div class="row text-center mt-5">
-                    <button type="submit" class="btn btn-success">
-                        Start Quiz
-                    </button>
-                </div>
+            </div>
+            <!--  Start Quiz -->
+            <div class="row text-center mt-5">
+                <button type="submit" class="btn btn-success startBtn">
+                    Start Quiz
+                </button>
             </div>
         </form>
     </div>

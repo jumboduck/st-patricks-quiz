@@ -30,7 +30,7 @@ def home():
 
 @app.route('/leaderboard')
 def leaderboard():
-    teams = list(mongo.db.teams.find())
+    teams = list(mongo.db.teams.find().sort("score", -1))
     return render_template("leaderboard.html", teams=teams)
 
 
@@ -56,7 +56,7 @@ def add_score():
             "created_by": session["user"]
         }
         mongo.db.teams.insert_one(team)
-        flash("Task Successfully Added")
+        flash("Score added succesfully")
         return redirect(url_for("leaderboard"))
 
 
@@ -67,20 +67,20 @@ def login():
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
-            {"name": request.form.get("name").lower()})
+            {"name": request.form.get("name")})
 
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("login"))
 
         login = {
-            "name": request.form.get("name").lower(),
+            "name": request.form.get("name"),
         }
         mongo.db.users.insert_one(login)
 
         # put the new user into 'session' cookie
-        session["user"] = request.form.get("name").lower()
-        flash("Team Registration Successful!")
+        session["user"] = request.form.get("name")
+        flash("Let's Go!")
         return redirect(url_for("quiz", name=session["user"]))
 
     return render_template("login.html")
