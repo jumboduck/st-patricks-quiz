@@ -155,6 +155,15 @@ p {
     }
 }
 
+.score-title {
+    text-align: center;
+    font-family: "Aclonica",sans-serif;
+}
+
+.fa-trophy {
+    padding: 5px;
+}
+
 .card {
     margin-left: 10%;
     margin-right: 10%;
