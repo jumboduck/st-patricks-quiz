@@ -43,6 +43,22 @@
         {% block content %}
         {% endblock %}
     </div>
+    
+    <!-- Toast Messages -->
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <div class="row toast-container">
+        <div class="col toast-text toasts toast-cross pt-1 pb-1" id="timer">
+            <div class="toast-cross">
+                <a onclick="this.parentNode.parentNode.style.display = 'none'">
+                    <p class="mb-0 text-right"><i class="fas fa-times"></i></p>
+                </a>
+            </div>
+            <div>
+                <p class="mb-0 pt-1">{{ message }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %} {% endif %} {% endwith %}
 
     <footer class="custom-footer fixed-bottom">
         <p class="text-center pb-2">Copyright © 2021 Team Viking. All rights reserved</p>

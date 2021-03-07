@@ -177,3 +177,30 @@ p {
   background: #ffe8e8;
   border: 1px solid #c78181;
 }
+
+
+/*----Toasts-----*/
+
+.toast-container{
+    position:fixed;
+    right:1.5rem;
+    top:0.5rem;
+    z-index: 99999999999;
+}
+
+.toasts{
+    border:0.1rem solid rgb(254, 17, 71, 1);
+    background-color:rgb(255, 255, 255, 0.8) !important;
+}
+
+.toast-text{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 1);
+}
+
+.toast-cross{
+      border-bottom-style:solid;
+      border-color:rgb(0, 0, 0, 0.8);
+}
