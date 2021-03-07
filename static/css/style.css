@@ -39,9 +39,8 @@ p {
 /* Login-page */
 
 .login-img {
-    width: 100vw;
     height: 100vh;
-    background-image: url(/static/css/images/login-page.png);
+    background-image: url(/static/images/login-page.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -50,7 +49,7 @@ p {
 .quiz-img {
     width: 100vw;
     height: 100vh;
-    background-image: url(/static/css/images/clover.jpg);
+    background-image: url(/static/images/clover.jpg);
     position: absolute;
 }
 
