@@ -11,10 +11,10 @@
             <div class="card-header" id="headingOne">
                 <div class="row">
                     <div class="col-md-8 col-sm-12">
-                        <button class="btn btn-block text-left text-muted pl-0 form-header" type="button"
+                        <button class="btn btn-block text-left pl-0 form-header" type="button"
                             data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false"
                             aria-controls="collapseOne">
-                            <i class="fas fa-chevron-down"></i>&nbsp;&nbsp;&nbsp;{{team.created_by}} - {{team.score}}
+                          {{team.created_by}} - {{team.score}}
                         </button>
                     </div>
                 </div>
@@ -22,9 +22,8 @@
         </div>
     </div>
     {% endfor %}
-    </div>
     {% else %}
-    <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+    <h3 class="text-center">No Results Found</h3>
     {% endif %}
 </div>
 
