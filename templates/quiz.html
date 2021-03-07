@@ -4,15 +4,18 @@
 <section>
     <div class="row mt-5">
         <div class="col text-center">
-            <h3>Welcome {{ name }}</h3>
+            <h3>Start Quiz&nbsp;&nbsp;{{ name }}</h3>
+            <p class="text-center mt-4">
+                <span class="blinking"><i class="fas fa-3x fa-angle-double-down"></i></span>
+            </p>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-2">
         <div class="col text-center">
             <div id="quizWrap"></div>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-2">
         <div class="col text-center">
             <form method="POST" action="{{ url_for('add_score') }}">
                 <!-- task name -->
@@ -25,8 +28,8 @@
                 <!-- submit button -->
                 <div class="row mt-4">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">
-                            Add Score to Leaderboard
+                        <button type="submit" class="btn btn-leaderboard hover-overlay-text">
+                            Go to Leaderboard
                         </button>
                     </div>
                 </div>
