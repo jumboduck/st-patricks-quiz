@@ -106,8 +106,25 @@ p {
     height: 100vh;
     background-image: url(/static/images/login-page.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
+
+
+.startBtn {
+    width: 150px;
+    margin: auto;
+    height: 45px;
+}
+
+/* Quiz-page */
+
+.quiz-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/static/images/clover.jpg);
+    position: absolute;
+}
+
 
 /* leaderboard-page */
 
@@ -180,6 +197,7 @@ p {
 .score-title {
     text-align: center;
     font-family: "Aclonica",sans-serif;
+    padding-bottom: 4%;
 }
 
 .fa-trophy {
@@ -195,9 +213,11 @@ p {
     font-family: "Aclonica", sans-serif;
 }
 
+.input-field {
+    padding-top: 24%;
+}
 
 /* Quiz QUESTION CSS */
-
 
 /* (A) WRAPPER */
 #quizWrap {
