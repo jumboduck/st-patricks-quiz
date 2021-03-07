@@ -30,7 +30,7 @@ def home():
 
 @app.route('/leaderboard')
 def leaderboard():
-    teams = list(mongo.db.teams.find())
+    teams = list(mongo.db.teams.find().sort("score", -1))
     return render_template("leaderboard.html", teams=teams)
 
 
