@@ -56,7 +56,7 @@ def add_score():
             "created_by": session["user"]
         }
         mongo.db.teams.insert_one(team)
-        flash("Task Successfully Added")
+        flash("Score added succesfully")
         return redirect(url_for("leaderboard"))
 
 
@@ -80,7 +80,7 @@ def login():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("name")
-        flash("Team Registration Successful!")
+        flash("Let's Go!")
         return redirect(url_for("quiz", name=session["user"]))
 
     return render_template("login.html")
