@@ -15,7 +15,7 @@ body {
 
 .custom-nav{
     background-color: #29da4f;
-
+    font-size: 15px;
 }
 
 .custom-footer {
@@ -253,4 +253,9 @@ p {
     .navbar-header{
         font-size:32px;
     }
+}
+
+@media (min-width: 991px){
+.custom-nav{
+    font-size: 22px;
 }
