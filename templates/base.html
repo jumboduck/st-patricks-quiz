@@ -34,7 +34,7 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <div class="container mb-5">
             {% block content %} {% endblock %}
         </div>
 
@@ -54,8 +54,13 @@
         </div>
         {% endfor %} {% endif %} {% endwith %}
 
-        <footer class="custom-footer fixed-bottom">
-            <p class="text-center pb-2">Copyright © 2021 Team Viking. All rights reserved</p>
+        <!--Footer-->
+        <footer class="container-fluid custom-footer text-center fixed-bottom mt-3" id="wrapper">
+            <div class="row footer">
+                <div class="col-12 copyright text-muted">
+                    <p class="copyright-text">Copyright <i class="far fa-copyright"></i> 2021 Team Viking</p>
+                </div>
+            </div>
         </footer>
     </body>
 

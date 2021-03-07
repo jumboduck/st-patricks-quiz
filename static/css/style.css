@@ -15,13 +15,15 @@ body {
 
 .custom-nav{
     background-color: #29da4f;
-
+    font-size: 15px;
 }
 
 .custom-footer {
     background-color: #29da4f;
-    font-family: "Aclonica", sans-serif;
     padding-top: 15px;
+    font-family: 'Roboto', serif !important;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 p {
@@ -253,4 +255,9 @@ p {
     .navbar-header{
         font-size:32px;
     }
+}
+
+@media (min-width: 991px){
+.custom-nav{
+    font-size: 22px;
 }
