@@ -30,6 +30,11 @@ p {
     font-family: "Aclonica", sans-serif;
 }
 
+/*---Block---*/
+.block {
+     height: 40px;
+}
+
 /* Header */
 #header-title {
     background-color: #29da4f;
