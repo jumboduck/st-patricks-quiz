@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
-
 /* Common css */
-h1 {
-    background-color: #29da4f;
-    margin-bottom: 0;
-    font-family: "Aclonica", sans-serif;
-    padding: 10px 10px 0;
-}
-
 .navbar {
     padding: 10px;
 }
@@ -34,6 +26,53 @@ h1 {
 
 p {
     font-family: "Aclonica", sans-serif;
+}
+
+/* Header */
+#header-title {
+    background-color: #29da4f;
+    margin-bottom: 0;
+    font-family: "Aclonica", sans-serif;
+    padding: 10px 10px 0;
+}
+
+/*Home page*/
+#home-page {
+    display:flex;
+}
+#home-text {
+    margin-top: 200px;
+}
+
+#home-text h2 {
+    margin-bottom: 30px;
+}
+
+#home-text i {
+    font-size: 1.1em;
+    color: grey;
+}
+
+#home-text i:hover {
+    color: #29da4f;
+    transform: scale(1.1);
+}
+
+.home-img {
+    width: 40%;
+    margin-left: 100px;
+}
+
+@media (max-width: 1024px){
+    #home-page {
+        display: block;
+    }
+    #home-text {
+        padding-bottom: 50px;
+    }
+    .home-img {
+        display: none;
+    }
 }
 
 /* Login-page */
