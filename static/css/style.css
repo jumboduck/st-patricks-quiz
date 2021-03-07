@@ -20,8 +20,10 @@ body {
 
 .custom-footer {
     background-color: #29da4f;
-    font-family: "Aclonica", sans-serif;
     padding-top: 15px;
+    font-family: 'Roboto', serif !important;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 p {
