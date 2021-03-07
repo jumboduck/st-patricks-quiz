@@ -3,7 +3,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
+
 
 if os.path.exists("env.py"):
     import env
@@ -17,8 +17,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-# Function to load 'Home' page as default
 
+# Function to load 'Home' page as default
 
 @app.route('/')
 @app.route('/home')
@@ -45,6 +45,8 @@ def quiz():
     if session["user"]:
         return render_template("quiz.html", name=name)
 
+
+# Function to add users score to leaderboard
 
 @app.route("/add_score", methods=["GET", "POST"])
 def add_score():
