@@ -5,38 +5,12 @@ body {
     font-family: "Aclonica", sans-serif;
 }
 
-
-/* Footer */
-.custom-footer {
-    background-color: #7cb518;
-    font-family: "Aclonica", sans-serif;
-}
-.custom-footer p {
-    font-family: "Aclonica", sans-serif;
-    padding: 20px 0 10px 0;
-}
-
-/* Header */
+/* Common css */
 .navbar {
-    padding: 10px;
-    font-family: "Aclonica", sans-serif;
-}
-
-.custom-nav {
-    background-color: #7cb518;
-}
-
-.navbar-toggler {
-    margin-left: auto; 
-}
-
-.navbar-nav {
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.nav-link {
-    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .custom-nav{
@@ -52,22 +26,12 @@ body {
     font-weight: 600;
 }
 
-.navbar-nav li:hover {
-    color: #1ddde8;
+p {
+    font-family: "Aclonica", sans-serif;
 }
 
-.navbar-nav li {
-    padding: 0 50px;
-}
-
-/*Home page*/
-.container {
-    background-color: red;
-}
-
-#home-page {
-    display:flex;
-    background-color: #aacc00;
+.btn-leaderboard{
+     background-color:#29da4f;
 }
 
 /*---hover overlay for SEND icon button---*/
@@ -109,12 +73,11 @@ body {
 }
 
 #home-text {
-    padding: 20% 30px;
+    margin-top: 200px;
 }
 
 #home-text h2 {
     margin-bottom: 30px;
-    padding: 0 10px;
 }
 
 #home-text i {
@@ -123,21 +86,16 @@ body {
 }
 
 #home-text i:hover {
-    color: #f3722c;
+    color: #29da4f;
     transform: scale(1.1);
 }
 
 .home-img {
- zuhur-index
-    width: 40%;
-    height: 90%;
-    margin-left: 100px;
-    
+    width: 50%;
 }
 
 @media (max-width: 991px) {
     .home-img {
-        margin-left: 30%;
         margin-top: 50px;
     }
 }
