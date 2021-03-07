@@ -7,26 +7,23 @@ body{
 
 /* Common css */
 .navbar {
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.custom-nav {
+.custom-nav{
     background-color: #29da4f;
-}
-
-.navbar-toggler {
-    margin-left: auto;
-    
-}
-
-.navbar-nav {
-    flex-direction: row;
-    justify-content: space-evenly;
+    background-color: #29da4f;
+    font-family: "Aclonica", sans-serif;
+    font-size: 20px;
 }
 
 .custom-footer {
     background-color: #29da4f;
     font-family: "Aclonica", sans-serif;
+    padding-top: 15px;
 }
 
 p {
@@ -232,4 +229,20 @@ p {
 .toast-cross{
       border-bottom-style:solid;
       border-color:rgb(0, 0, 0, 0.8);
+}
+
+.navbar-header{
+    font-size:25px;
+}
+
+@media (max-width: 991px){
+    .home-img {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 991px){
+    .navbar-header{
+        font-size:32px;
+    }
 }
