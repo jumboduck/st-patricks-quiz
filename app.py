@@ -67,19 +67,19 @@ def login():
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
-            {"name": request.form.get("name").lower()})
+            {"name": request.form.get("name")})
 
         if existing_user:
             flash("Username already exists")
             return redirect(url_for("login"))
 
         login = {
-            "name": request.form.get("name").lower(),
+            "name": request.form.get("name"),
         }
         mongo.db.users.insert_one(login)
 
         # put the new user into 'session' cookie
-        session["user"] = request.form.get("name").lower()
+        session["user"] = request.form.get("name")
         flash("Team Registration Successful!")
         return redirect(url_for("quiz", name=session["user"]))
 
