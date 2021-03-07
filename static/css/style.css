@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
+body{
+    background-color:#e8fbe8;
+}
+
 /* Common css */
 .navbar {
     padding: 10px;
@@ -37,9 +41,11 @@ p {
 }
 
 /*Home page*/
+
 #home-page {
     display:flex;
 }
+
 #home-text {
     margin-top: 200px;
 }
@@ -59,19 +65,12 @@ p {
 }
 
 .home-img {
-    width: 40%;
-    margin-left: 100px;
+    width: 50%;
 }
 
-@media (max-width: 1024px){
-    #home-page {
-        display: block;
-    }
-    #home-text {
-        padding-bottom: 50px;
-    }
+@media (max-width: 991px){
     .home-img {
-        display: none;
+        margin-top: 50px;
     }
 }
 
