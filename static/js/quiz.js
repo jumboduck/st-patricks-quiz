@@ -16,7 +16,7 @@ var quiz = {
         {
             q: "What animal did St. Patrick drive out of Ireland?",
             o: [
-                "snake",
+                "Snake",
                 "Scorpion",
                 "Spider",
                 "Rat"
@@ -31,7 +31,7 @@ var quiz = {
                 "Punched",
                 "Bad-Luck"
             ],
-            a: 3
+            a: 0
         },
         {
             q: "How many leaves does a shamrock have?",
@@ -41,7 +41,7 @@ var quiz = {
                 "Three Leaves",
                 "Four Leaves"
             ],
-            a: 3
+            a: 2
         },
         {
             q: "What colour was originally associated with St. Patrick's day?",
@@ -51,7 +51,57 @@ var quiz = {
                 "Purple",
                 "Blue"
             ],
+            a: 3
+        },
+        {
+            q: "St Patrick used shamrocks to explain what to the Irish people?",
+            o: [
+                "Farming",
+                "Christianity",
+                "Mathematics",
+                "Literacy"
+            ],
             a: 1
+        },
+        {
+            q: "Which city dyes their river green for st patrick's day?",
+            o: [
+                "Dublin",
+                "Boston",
+                "Belfast",
+                "Chicago"
+            ],
+            a: 3
+        },
+        {
+            q: "What was St Patrick's name at birth?",
+            o: [
+                "John Snow",
+                "Alden Becket",
+                "Merwyn McGeet",
+                "Maewyn Succat"
+            ],
+            a: 3
+        },
+        {
+            q: "When was the first st Patrick's parade?",
+            o: [
+                "1762",
+                "2001",
+                "1809",
+                "1982"
+            ],
+            a: 0
+        },
+        {
+            q: "How many pints of Guinness are consumed globally on St Patrick's day?",
+            o: [
+                "5 million",
+                "1 million",
+                "31 million",
+                "13 million"
+            ],
+            a: 3
         }
     ],
 
