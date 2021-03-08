@@ -1,49 +1,48 @@
-	@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 body {
-	background-color: #e8fbe8;
+    background-color: #e8fbe8;
     font-family: "Aclonica", sans-serif;
     overflow-x: hidden;
-	display: flex;
+    display: flex;
     flex-direction: column;
-	min-height: 100vh;
+    min-height: 100vh;
 }
 
 /*---Nav Bar---*/
 
 .navbar {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .custom-nav {
-	background-color: #29da4f;
-	font-size: 15px;
+    background-color: #29da4f;
+    font-size: 15px;
 }
 
 .navbar-header a {
     font-size: 25px;
     text-decoration: none;
-    color:#000000 !important;
+    color: #000000 !important;
 }
 
 /*---Footer---*/
 
 .custom-footer {
-	background-color: #29da4f;
-	padding-top: 15px;
-	font-family: 'Roboto', serif !important;
-	font-size: 10px;
-	font-weight: 600;
-	margin-top: auto;
+    background-color: #29da4f;
+    padding-top: 15px;
+    font-family: "Roboto", serif !important;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: auto;
 }
-
 
 /*---Content---*/
 
 p {
-	font-family: "Aclonica", sans-serif;
+    font-family: "Aclonica", sans-serif;
 }
 
 .container-fluid {
@@ -54,319 +53,335 @@ p {
 /*---Buttons---*/
 
 .startBtn {
-	width: 150px;
-	margin: auto;
-	height: 45px;
+    width: 150px;
+    margin: auto;
+    height: 45px;
 }
-
 
 /*---hover overlay for 'Go to Leaderboard icon button---*/
 
-.hover-overlay-text:hover {
-	transform: scale(1.1) !important;
+.hover-overlay-text {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
+.hover-overlay-text:hover {
+    transform: scale(1.1) !important;
+}
 
 /*---Blinking Arrow feature---*/
 
 .blinking {
-	animation: blinkingText 1.2s infinite;
+    animation: blinkingText 1.2s infinite;
 }
 
 @keyframes blinkingText {
-	0% {
-		color:#198754;
-	}
-	49% {
-		color:#198754;
-	}
-	60% {
-		color: transparent;
-	}
-	99% {
-		color: transparent;
-	}
-	100% {
-		color: #198754;
-	}
+    0% {
+        color: #198754;
+    }
+    49% {
+        color: #198754;
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: #198754;
+    }
 }
 
 /*---Header---*/
 
 #header-title {
-	background-color: #29da4f;
-	margin-bottom: 0;
-	font-family: "Aclonica", sans-serif;
-	padding: 10px 10px 0;
+    background-color: #29da4f;
+    margin-bottom: 0;
+    font-family: "Aclonica", sans-serif;
+    padding: 10px 10px 0;
 }
 
 /*---Home page---*/
 
 #home-page {
-	display: flex;
+    display: flex;
 }
 
 #home-text {
-	margin-top: 200px;
+    margin-top: 200px;
 }
 
 #home-text h2 {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #home-text i {
-	font-size: 1.1em;
-	color: grey;
+    font-size: 1.1em;
+    color: grey;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #home-text i:hover {
-	color: #29da4f;
-	transform: scale(1.1);
+    color: #29da4f;
+    transform: scale(1.1);
 }
 
 .home-img {
-	width: 50%;
+    width: 50%;
 }
-
 
 /*---Login-page---*/
 
 .login-img {
-	height: 100vh;
-	background-image: url(/static/images/login-page.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+    height: 100vh;
+    background-image: url(/static/images/login-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
 /*---leaderboard-page---*/
-
 
 /*---Source: https://codepen.io/nohoid/pen/kIfto---*/
 
 .leaderboard {
-	height: 100vh;
-	background: linear-gradient(119deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-	background-size: 1800% 1800%;
-	-webkit-animation: rainbow 5s ease infinite;
-	-z-animation: rainbow 5s ease infinite;
-	-o-animation: rainbow 5s ease infinite;
-	animation: rainbow 5s ease infinite;
+    height: 100vh;
+    background: linear-gradient(
+        119deg,
+        #ff2400,
+        #e81d1d,
+        #e8b71d,
+        #e3e81d,
+        #1de840,
+        #1ddde8,
+        #2b1de8,
+        #dd00f3,
+        #dd00f3
+    );
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 5s ease infinite;
+    -z-animation: rainbow 5s ease infinite;
+    -o-animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
 }
 
 @-webkit-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
 
 @-moz-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
 
 @-o-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
 
 @keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
 }
 
 .score-title {
-	text-align: center;
-	font-family: "Aclonica", sans-serif;
-	padding-bottom: 4%;
+    text-align: center;
+    font-family: "Aclonica", sans-serif;
+    padding-bottom: 4%;
 }
 
 .card {
-	margin-left: 10%;
-	margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .team-info {
-	font-family: "Aclonica", sans-serif;
+    font-family: "Aclonica", sans-serif;
 }
 
 .input-field {
-	padding-top: 24%;
+    padding-top: 24%;
 }
-
 
 /*---Font Awesome---*/
 
 .fa-trophy {
-	padding: 5px;
+    padding: 5px;
 }
-
 
 /* Quiz QUESTION CSS */
 
-
 /*---Source: https://code-boxx.com/simple-javascript-quiz---*/
-
 
 /* (A) WRAPPER */
 
 #quizWrap {
-	max-width: 600px;
-	margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
-
 
 /* (B) QUESTION */
 
 #quizQn {
-	padding: 20px;
-	background: #198754;
-	color: #fff;
-	font-size: 19px;
-	border-radius: 10px;
+    padding: 20px;
+    background: #198754;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 10px;
 }
-
 
 /* (C) ANSWERS */
 
 #quizAns {
-	margin: 10px 0;
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 10px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
 
 #quizAns input[type="radio"] {
-	display: none;
+    display: none;
 }
 
 #quizAns label {
-	background: #fafafa;
-	border: 1px solid #eee;
-	border-radius: 10px;
-	padding: 10px;
-	font-size: 15px;
-	cursor: pointer;
-	text-align: center;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#quizAns label:hover {
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
+    transform: scale(1.1);
 }
 
 #quizAns label.correct {
-	background: #d8ffc4;
-	border: 1px solid #60a03f;
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
 }
 
 #quizAns label.wrong {
-	background: #ffe8e8;
-	border: 1px solid #c78181;
+    background: #ffe8e8;
+    border: 1px solid #c78181;
 }
-
 
 /*----Toasts-----*/
 
 .toast-container {
-	position: fixed;
-	right: 1.5rem;
-	top: 0.5rem;
-	z-index: 99999999999;
+    position: fixed;
+    right: 1.5rem;
+    top: 0.5rem;
+    z-index: 99999999999;
 }
 
 .toasts {
-	border: 0.1rem solid rgb(254, 17, 71, 1);
-	background-color: rgb(255, 255, 255, 0.8) !important;
+    border: 0.1rem solid rgb(254, 17, 71, 1);
+    background-color: rgb(255, 255, 255, 0.8) !important;
 }
 
 .toast-text {
-	font-family: "Source Serif Pro", serif;
-	font-size: 0.7rem;
-	font-weight: 600;
-	color: rgb(0, 0, 0, 1);
+    font-family: "Source Serif Pro", serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 1);
 }
 
 .toast-cross {
-	border-bottom-style: solid;
-	border-color: rgb(0, 0, 0, 0.8);
+    border-bottom-style: solid;
+    border-color: rgb(0, 0, 0, 0.8);
 }
 
 .toast-cross {
-	border-bottom-style: solid;
-	border-color: rgb(0, 0, 0, 0.8);
+    border-bottom-style: solid;
+    border-color: rgb(0, 0, 0, 0.8);
 }
-
 
 /*---Media Quieries---*/
-
 
 /*---Margin top for smaller devices for better viewing on text/ content---*/
 
 @media (max-width: 991px) {
-	.home-img {
-		margin-top: 50px;
-	}
+    .home-img {
+        margin-top: 50px;
+    }
 }
-
 
 /*---Reduce font size for Navbar header for clearer/ smarter viewing on mobile devices----*/
 
 @media (min-width: 991px) {
-	.navbar-header {
-		font-size: 32px;
-	}
+    .navbar-header {
+        font-size: 32px;
+    }
 }
-
 
 /*---Reduce font size for Navbar links for clearer/ smarter viewing on mobile devices---*/
 
 @media (min-width: 991px) {
-	.custom-nav {
-		font-size: 22px;
-	}
+    .custom-nav {
+        font-size: 22px;
+    }
 }
-
 
 /*---Reduce font size for cleaer/ smarter viewing on mobile devices---*/
 
 @media (min-width: 991px) {
-	#quizQn {
-		font-size: 24px;
-	}
-	/*---Reduce font size for cleaer/ smarter viewing on mobile devices---*/
-	@media (min-width: 991px) {
-		#quizAns label {
-			font-size: 20px;
-		}
+    #quizQn {
+        font-size: 24px;
+    }
+    /*---Reduce font size for cleaer/ smarter viewing on mobile devices---*/
+    @media (min-width: 991px) {
+        #quizAns label {
+            font-size: 20px;
+        }
     }
 
-/*---Increase spacing bwteen links for larger devices for better clarity---*/
-    
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem;
+    /*---Increase spacing bwteen links for larger devices for better clarity---*/
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 2rem;
+        }
     }
 }
