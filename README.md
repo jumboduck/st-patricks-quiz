@@ -9,3 +9,5 @@
 ## CREDITS
 
 https://code-boxx.com/simple-javascript-quiz/
+
+https://codepen.io/nohoid/pen/kIfto
