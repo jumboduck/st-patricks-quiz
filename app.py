@@ -30,7 +30,8 @@ def home():
 
 @app.route('/leaderboard')
 def leaderboard():
-    teams = list(mongo.db.teams.find().sort("score", 1))
+    teams = list(mongo.db.teams.find().sort("score", -1))
+    print(teams)
     return render_template("leaderboard.html", teams=teams)
 
 
@@ -52,7 +53,7 @@ def quiz():
 def add_score():
     if request.method == "POST":
         team = {
-            "score": request.form.get("score"),
+            "score": int(request.form.get("score")),
             "created_by": session["user"]
         }
         mongo.db.teams.insert_one(team)
