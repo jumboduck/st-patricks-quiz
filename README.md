@@ -9,17 +9,19 @@
 **St. Patrick's Day Quiz** is a website designed for the Code Institute - March
 Hackathon.
 
-St. Patrick Day Quiz This website aims to connect people for St. Patrick's Day,
+It aims to connect people for St. Patrick's Day,
 especially
 during times when people are unable to socialise in person.
 
 It allows people to test their
-knowledge of St. Patrick's Day and the history behind it. All that is required
-is for an individual/ group/ family/ household to enter their team name,
-answer the 10 questions
-and compare their scores with other teams on the leaderboard.
+knowledge of St. Patrick's Day and the history behind it.
 
-So who really is the St. Patrick Day 'guru'?....begin your challenge and see how
+All that is required
+is for an individual/ group/ family/ household to enter their team name;
+answer 10 questions
+; and compare their scores with others on the leaderboard.
+
+So who really is the St. Patrick Day Guru?....begin your challenge and see how
 you fair...
 
 ![](/static/images/Screenshot%202021-03-08%20at%2011.47.08.png)
@@ -70,7 +72,7 @@ The main colours used are displayed below from [Coolors](https://coolors.co/)
     green background
     and a wrong answer a red background.
   - Leaderboard: This is the page a user can view their own score or
-    the over all
+    overall
     score of users.
   - Footer: This features copyright text.
 
