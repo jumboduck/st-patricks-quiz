@@ -43,10 +43,6 @@ p {
 
 /*---Buttons---*/
 
-.btn-leaderboard {
-	background-color: #29da4f;
-}
-
 .startBtn {
 	width: 150px;
 	margin: auto;
@@ -69,10 +65,10 @@ p {
 
 @keyframes blinkingText {
 	0% {
-		color: rgb(41, 218, 79, 1);
+		color:#198754;
 	}
 	49% {
-		color: rgb(41, 218, 79, 1);
+		color:#198754;
 	}
 	60% {
 		color: transparent;
@@ -81,7 +77,7 @@ p {
 		color: transparent;
 	}
 	100% {
-		color: rgb(41, 218, 79, 1);
+		color: #198754;
 	}
 }
 
@@ -250,8 +246,8 @@ p {
 
 #quizQn {
 	padding: 20px;
-	background: #29da4f;
-	color: #000000;
+	background: #198754;
+	color: #fff;
 	font-size: 19px;
 	border-radius: 10px;
 }
@@ -307,7 +303,7 @@ p {
 
 .toast-text {
 	font-family: "Source Serif Pro", serif;
-	font-size: 1.1rem;
+	font-size: 0.7rem;
 	font-weight: 600;
 	color: rgb(0, 0, 0, 1);
 }
