@@ -1,3 +1,6 @@
+// Multiple choice quiz
+// Credit: https://code-boxx.com/simple-javascript-quiz/
+
 var quiz = {
     // (A) PROPERTIES 
     // (A1) QUESTIONS & ANSWERS

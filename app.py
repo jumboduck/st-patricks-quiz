@@ -38,7 +38,7 @@ def leaderboard():
 
 @app.route('/quiz')
 def quiz():
-    # grab the session user's username from db
+    # grab the session user's name from db
     name = mongo.db.users.find_one(
         {"name": session["user"]})["name"]
 
