@@ -1,7 +1,8 @@
 	@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 body {
 	background-color: #e8fbe8;
-	font-family: "Aclonica", sans-serif;
+    font-family: "Aclonica", sans-serif;
+    overflow-x: hidden;
 }
 
 
