@@ -40,6 +40,10 @@ p {
 	font-family: "Aclonica", sans-serif;
 }
 
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
 /*---Buttons---*/
 
