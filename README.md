@@ -31,14 +31,15 @@ The main colours used are displayed below from [Coolors](https://coolors.co/)
 - Footer: This features copyright text.
 
 ## Technologies Used
--	HTML5: For the structure of the site.
--	CSS3: For styling of the site.
--	Bootsrap5: For fast development of the site and its responsiveness.
--	Fontawesome: For visual icons.
--	Github: For remote access of the project.
--	Gitpod: Development environment on the browser.
--	Git: For version-control.
--	Balsamiq: For designing wireframes.
+-	HTML5
+-	CSS3
+-	Bootsrap5
+-	Fontawesome
+-	Github
+-	Gitpod
+-	Git
+-	Balsamiq
+-	Heroku
 
 **Add other tech used**
 
