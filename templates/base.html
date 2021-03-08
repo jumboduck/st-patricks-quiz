@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <head>
-            
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
-            <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
-            
-            <title>Document</title>
-        
-        </head>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light custom-nav">
-                <p class="text-center my-auto navbar-header header-title my-auto"><a class="nav-link" href="{{url_for('home')}}">St Patricks Quiz</a></p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item pr-5">
-                            <a class="nav-link" href="{{url_for('home')}}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mr-5" href="{{url_for('login')}}">Take Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url_for('leaderboard')}}">Leaderboard</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="container-fluid mb-3">
-            {% block content %} {% endblock %}
-        </div>
+<head>
 
-        <!-- Toast Messages -->
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-        <div class="row toast-container">
-            <div class="col toast-text toasts toast-cross pt-1 pb-1" id="timer">
-                <div class="toast-cross">
-                    <a onclick="this.parentNode.parentNode.style.display = 'none'">
-                        <p class="mb-0 text-right"><i class="fas fa-times"></i></p>
-                    </a>
-                </div>
-                <div>
-                    <p class="mb-0 pt-1">{{ message }}</p>
-                </div>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+
+    <title>St Patrick's Quiz</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+            <p class="text-center my-auto navbar-header header-title my-auto"><a class="nav-link"
+                    href="{{url_for('home')}}">St Patricks Quiz</a></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item pr-5">
+                        <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-5" href="{{url_for('login')}}">Take Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('leaderboard')}}">Leaderboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        {% block content %} {% endblock %}
+    </div>
+
+    <!-- Toast Messages -->
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <div class="row toast-container">
+        <div class="col toast-text toasts toast-cross pt-1 pb-1" id="timer">
+            <div class="toast-cross">
+                <a onclick="this.parentNode.parentNode.style.display = 'none'">
+                    <p class="mb-0 text-right"><i class="fas fa-times"></i></p>
+                </a>
+            </div>
+            <div>
+                <p class="mb-0 pt-1">{{ message }}</p>
             </div>
         </div>
-        {% endfor %} {% endif %} {% endwith %}
+    </div>
+    {% endfor %} {% endif %} {% endwith %}
 
-        <!--Footer-->
-        <footer class="container-fluid custom-footer text-center fixed-bottom">
-            <div class="row">
-                <div class="col-12 copyright text-muted">
-                    <p class="copyright-text">Copyright <i class="far fa-copyright"></i> 2021 Team Viking</p>
-                </div>
+    <!--Footer-->
+    <footer class="container-fluid custom-footer text-center">
+        <div class="row">
+            <div class="col-12 copyright text-muted">
+                <p class="copyright-text">Copyright <i class="far fa-copyright"></i> 2021 Team Viking</p>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/toasts.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+<script src="{{ url_for('static', filename='js/toasts.js') }}"></script>
 
-    {% block scripts %} {% endblock %}
-    
+{% block scripts %} {% endblock %}
+
 </html>
