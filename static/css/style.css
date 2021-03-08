@@ -23,7 +23,6 @@ body {
 	font-size: 25px;
 }
 
-
 /*---Footer---*/
 
 .custom-footer {
@@ -365,4 +364,12 @@ p {
 		#quizAns label {
 			font-size: 20px;
 		}
-	}
+    }
+
+/*---Increase spacing bwteen links for larger devices for better clarity---*/
+    
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    }
+}
